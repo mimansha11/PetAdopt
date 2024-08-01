@@ -1,0 +1,133 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f4ecec;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: white;
+    color: #333;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: hidden; /* Ensure content doesn't overflow rounded corners */
+    position: relative; /* Ensure the header is positioned relatively */
+}
+.header-content {
+    text-align: left;
+    max-width: 60%; /* Adjust the width as needed */
+    z-index: 2;
+}
+.header-content h1,
+.header-content p {
+    margin: 0;
+    text-transform: lowercase;
+    font-size: larger;
+    font-family: cursive;
+}
+.header-image {
+    position: absolute;
+    top: 10px; 
+    left: 10px; /* Adjust this value to position the image */
+    max-width: 200px; /* Adjust the size of the image */
+    max-height: 200px;
+    z-index: 2;
+}
+.header-right-image {
+    position: absolute;
+    top: 10px; 
+    right: 10px; /* Adjust this value to position the image */
+    max-width: 250px; /* Adjust the size of the image */
+    max-height: 250px;
+    z-index: 2;
+}
+.rescue-login {
+    position: absolute;
+    bottom: 47px; 
+    right: 47px; /* Adjust this value to position the button */
+    padding: 10px 20px;
+    background-color: rgb(59, 15, 97);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 2;
+}
+.container {
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4in; /* Space of 4 inches after the header */
+    position: relative;
+}
+.pet {
+    flex: 0 1 calc(33.333% - 1em); 
+    display: flex;
+    margin-bottom: 2em;
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.pet:hover {
+    transform: scale(1.05); /* Increase size on hover */
+}
+.pet img {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-right: 1em;
+    transition: opacity 0.3s ease-in-out;
+}
+.pet:hover img {
+    opacity: 0.7; /* Reduce opacity on hover */
+}
+.pet-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pet-info h2 {
+    margin: 0;
+}
+.pet-info p {
+    margin: 0.5em 0;
+}
+.centered-images1 {
+    position: absolute;
+    top: calc(5px + 4in); /* 300px (header height) + 4in (margin) */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400%;
+}
+.centered-images1 img {
+    max-width: 400px; /* Adjust image size as needed */
+    margin: 0 10px; /* Adjust margin between images */
+}
+.speech-cloud {
+    position: absolute;
+    top: -10px; /* Adjust the vertical position */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200px;
+    font-style: oblique;
+    font-family: cursive;
+}
